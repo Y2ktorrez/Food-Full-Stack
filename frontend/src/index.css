@@ -1,0 +1,35 @@
+/* Importo el tipo de fuente que quiero */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Este CSS tiene como objetivo eliminar los márgenes y rellenos predeterminados */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;  /* Llamo al tipo de funte que importe */
+}
+
+body{
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.app{
+  width: 80%; /* El ancho del elemento será el 80% del ancho del contenedor padre */
+  margin: auto; /* Centrará el elemento horizontalmente dentro de su contenedor padre */
+}
+
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Establece la opacidad del elemento al 0% al inicio de la animación */
+  }
+  100% {
+    opacity: 1; /* Establece la opacidad del elemento al 100% al final de la animación */
+  }
+}
+

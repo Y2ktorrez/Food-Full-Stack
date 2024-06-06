@@ -1,0 +1,67 @@
+/* Se distribuirán horizontalmente con espacio entre ellos y se alinearán verticalmente 
+   en el centro de la barra de navegación. */
+.navbar{
+    padding: 20px 0px; /* Añade un padding de 20 píxeles en la parte superior e inferior, y 0 píxeles en los lados izquierdo y derecho */
+    display: flex; /* Establece el contenedor como un contenedor flexible (flex container) */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio igual entre ellos */
+    align-items: center;  /* Alinea los elementos hijos verticalmente en el centro del contenedor */
+}
+
+.navbar .logo{
+    width: 150px; /* Establece el ancho del logo a 150 píxeles */
+}
+
+.navbar-menu{
+    display: flex; /* Hace que los elementos de la lista se distribuyan en una fila horizontal */
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    gap: 20px; /* Añade un espacio de 20 píxeles entre los elementos de la lista */
+    color: #49557e; /* Establece el color del texto de los elementos de la lista */
+    font-size: 18px; /* Establece el tamaño de la fuente de los elementos de la lista a 18 píxeles */
+}
+
+.navbar-right{
+    display: flex; /* Establece el contenedor como un contenedor flexible (flex container) */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro del contenedor */
+    gap: 40px; /* Añade un espacio de 40 píxeles entre los elementos de la lista */
+}
+
+.navbar button{
+    background: transparent; /* Hace que el fondo del botón sea transparente */
+    font-size: 16px; /* Establece el tamaño de la fuente del botón a 16 píxeles */
+    color: #49557e; /* Establece el color del texto del botón */
+    border: 1px solid tomato; /* Establece el borde del botón con un color tomate */
+    padding: 10px 30px; /* Añade un padding de 10 píxeles en la parte superior e inferior, y 30 píxeles en los lados izquierdo y derecho */
+    border-radius: 50px; /* Redondea las esquinas del borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón, indicando que es clicable */
+    transition: 0.3s; /* Agrega una transición suave de 0.3 segundos a todas las propiedades cambiantes */
+}
+
+/* Efecto visual para resaltar el botón cuando el usuario pasa el cursor sobre él dentro de la barra de navegación */
+.navbar button:hover{
+    background-color: #fff4f2; /* Cambua el color del fondo */
+}
+
+/* Estilos para resaltar el elemento activo en la barra de navegación */
+.navbar .active{
+    padding-bottom: 2px; /* Añade un relleno en la parte inferior del elemento activo */
+    border-bottom: 2px solid #49557e; /* Agrega un borde sólido de color gris oscuro en la parte inferior del elemento activo */
+}
+
+.navbar li{
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón, indicando que es clicable */
+}
+
+/* Estilos para el contenedor del icono de búsqueda */
+.navbar-search-icon {
+    position: relative; /* Establece la posición relativa para que los elementos internos se posicionen con respecto a este contenedor */
+}
+
+.navbar-search-icon .dot {
+    position: absolute; /* Establece la posición absoluta para que el punto rojo pueda posicionarse de manera precisa */
+    min-width: 10px; /* Establece el ancho mínimo del punto rojo */
+    min-height: 10px; /* Establece la altura mínima del punto rojo */
+    background-color: tomato; /* Establece el color de fondo del punto rojo */
+    border-radius: 5px; /* Aplica un radio de borde de 5 píxeles para redondear las esquinas del punto rojo */
+    top: -8px; /* Posiciona el punto rojo 8 píxeles hacia arriba desde el borde superior del contenedor */
+    right: -8px; /* Posiciona el punto rojo 8 píxeles hacia la derecha desde el borde derecho del contenedor */
+}

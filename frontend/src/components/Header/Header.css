@@ -1,0 +1,40 @@
+.header {
+    height: 34vw; /* Establece la altura del encabezado como el 34% del ancho de la ventana gráfica */
+    margin: 30px auto; /* Establece un margen superior e inferior de 30 píxeles y margen izquierdo y derecho automáticos para centrar el encabezado horizontalmente */
+    background: url('/header_img.png') no-repeat; /* Establece la imagen de fondo del encabezado y evita que se repita */
+    background-size: contain; /* Ajusta el tamaño de la imagen de fondo para que quepa dentro del contenedor sin distorsionarse */
+    position: relative; /* Establece la posición relativa para que los elementos hijos se posicionen de forma relativa a este contenedor */
+}
+
+.header-contents {
+    position: absolute; /* Establece la posición absoluta para que el contenido se pueda colocar de forma precisa */
+    display: flex; /* Establece el contenedor como un contenedor flexible para alinear los elementos secundarios */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en columna */
+    align-items: start; /* Alinea los elementos secundarios al inicio del eje transversal */
+    gap: 1.5vw; /* Establece un espacio entre los elementos secundarios del 1.5% del ancho de la ventana gráfica */
+    max-width: 50%; /* Establece el ancho máximo del contenido del encabezado como el 50% del contenedor principal */
+    bottom: 10%; /* Coloca el contenido del encabezado un 10% desde la parte inferior del contenedor principal */
+    left: 6vw; /* Coloca el contenido del encabezado un 6% desde el borde izquierdo del contenedor principal */
+    animation: fadeIn 3s; /* Aplica la animación 'fadeIn' durante 3 segundos al contenido del encabezado */
+}
+
+.header-contents h2 {
+    font-weight: 500; /* Establece el peso de la fuente del título */
+    color: white; /* Establece el color del texto del título */
+    font-size: max(4.5vw, 22px); /* Establece el tamaño de la fuente del título como el máximo entre el 4.5% del ancho de la ventana gráfica y 22 píxeles */
+}
+
+.header-contents p {
+    color: white; /* Establece el color del texto */
+    font-size: 1vw; /* Establece el tamaño de la fuente como el 1% del ancho de la ventana gráfica */
+}
+
+.header-contents button {
+    border: none; /* Elimina el borde del botón */
+    color: #747474; /* Establece el color del texto del botón */
+    font-weight: 500; /* Establece el peso de la fuente del botón */
+    padding: 1vw 2.3vw; /* Establece el relleno del botón */
+    background-color: white; /* Establece el color de fondo del botón */
+    font-size: max(1vw, 13px); /* Establece el tamaño de la fuente del botón como el máximo entre el 1% del ancho de la ventana gráfica y 13 píxeles */
+    border-radius: 50px; /* Establece el radio de borde del botón */
+}
