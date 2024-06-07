@@ -65,3 +65,49 @@
     top: -8px; /* Posiciona el punto rojo 8 píxeles hacia arriba desde el borde superior del contenedor */
     right: -8px; /* Posiciona el punto rojo 8 píxeles hacia la derecha desde el borde derecho del contenedor */
 }
+
+/* Response */
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 140px; /* Establece el ancho del logo de la barra de navegación a 140px si el ancho de la ventana es de 1050px o menor */
+    }
+    .navbar-menu{
+        gap: 20px; /* Establece el espacio entre los elementos del menú de navegación a 20px */
+        font-size: 17px; /* Establece el tamaño de la fuente de los elementos del menú de navegación a 17px */
+    }
+    .navbar-right{
+        gap: 30px; /* Establece el espacio entre los elementos en la parte derecha de la barra de navegación a 30px */
+    }
+    .navbar-right img{
+        width: 22px; /* Establece el ancho de las imágenes en la parte derecha de la barra de navegación a 22px */
+    }
+    .navbar-right button{
+        padding: 8px 25px; /* Establece el relleno de los botones en la parte derecha de la barra de navegación a 8px arriba/abajo y 25px izquierda/derecha */
+    }
+}
+
+@media (max-width:900px){
+    .navbar .logo{
+        width: 120px; /* Establece el ancho del logo de la barra de navegación a 120px si el ancho de la ventana es de 900px o menor */
+    }
+    .navbar-menu{
+        gap: 15px; /* Establece el espacio entre los elementos del menú de navegación a 15px */
+        font-size: 16px; /* Establece el tamaño de la fuente de los elementos del menú de navegación a 16px */
+    }
+    .navbar-right{
+        gap: 20px; /* Establece el espacio entre los elementos en la parte derecha de la barra de navegación a 20px */
+    }
+    .navbar-right img{
+        width: 20px; /* Establece el ancho de las imágenes en la parte derecha de la barra de navegación a 20px */
+    }
+    .navbar-right button{
+        padding: 7px 20px; /* Establece el relleno de los botones en la parte derecha de la barra de navegación a 7px arriba/abajo y 20px izquierda/derecha */
+        font-size: 15px; /* Establece el tamaño de la fuente de los botones a 15px */
+    }
+}
+
+@media (max-width:750px){
+    .navbar-menu{
+        display: none; /* Oculta el menú de navegación si el ancho de la ventana es de 750px o menor */
+    }
+}

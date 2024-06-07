@@ -38,3 +38,22 @@
     font-size: max(1vw, 13px); /* Establece el tamaño de la fuente del botón como el máximo entre el 1% del ancho de la ventana gráfica y 13 píxeles */
     border-radius: 50px; /* Establece el radio de borde del botón */
 }
+
+/* Response */
+@media (max-width:1050px){
+    .header-contents{
+        max-width: 45%; /* Establece el ancho máximo del contenido del encabezado al 45% del contenedor padre cuando el ancho de la ventana es de 1050px o menor */
+    }
+}
+
+@media (max-width:750px){
+    .header-contents{
+        max-width: 65%; /* Establece el ancho máximo del contenido del encabezado al 65% del contenedor padre cuando el ancho de la ventana es de 750px o menor */
+    }
+    .header-contents p{
+        display: none; /* Oculta los párrafos dentro del contenido del encabezado cuando el ancho de la ventana es de 750px o menor */
+    }
+    .header-contents button{
+        padding: 2vw 4vw; /* Ajusta el relleno del botón dentro del contenido del encabezado a 2vw arriba/abajo y 4vw izquierda/derecha cuando el ancho de la ventana es de 750px o menor */
+    }
+}

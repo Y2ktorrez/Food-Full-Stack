@@ -46,3 +46,15 @@
     background-color: grey; /* Establece el color de fondo de la línea horizontal */
     border: none; /* Elimina cualquier borde de la línea horizontal */
 }
+
+/* Response */
+@media (max-width:750px){
+    .footer-content{
+        display: flex; /* Cambia el layout a flexbox */
+        flex-direction: column; /* Organiza los elementos hijos en una columna */
+        gap: 35px; /* Añade un espacio de 35 píxeles entre los elementos hijos */
+    }
+    .footer-copyright{
+        text-align: center; /* Centra el texto del copyright */
+    }
+}

@@ -59,3 +59,10 @@
     padding: 2px; /* Añade un padding de 2 píxeles alrededor del elemento activo */
 }
 
+/* Response */
+@media (max-width:1050px){
+    .explore-menu-text{
+        max-width: 100%; /* Establece el ancho máximo del texto del menú de exploración al 100% del contenedor padre cuando el ancho de la ventana es de 1050px o menor */
+        font-size: 14px; /* Ajusta el tamaño de la fuente del texto del menú de exploración a 14px cuando el ancho de la ventana es de 1050px o menor */
+    }
+}
