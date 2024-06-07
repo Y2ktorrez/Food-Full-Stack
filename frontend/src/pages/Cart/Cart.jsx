@@ -1,11 +1,14 @@
 import React, { useContext } from 'react'
 import './Cart.css'
 import { StoreContext } from '../../context/StoreContext'
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
 
   // Acceso al contexto del almacenamiento para obtener información sobre los elementos del carrito
   const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
+
+  const navigate = useNavigate();
 
   return (
     <div className='cart'>
@@ -56,16 +59,16 @@ const Cart = () => {
             <hr/> {/* Línea divisoria */}
             <div className="cart-total-details">
               <p>Delivery</p> {/* Costo de envío */}
-              <p>{2}</p> {/* Precio fijo del envío, debería ser dinámico */}
+              <p>${getTotalCartAmount()===0?0:2}</p> {/* Precio fijo del envío, debería ser dinámico */}
             </div>
             <hr/> {/* Línea divisoria */}
             <div className="cart-total-details">
               <b>Total</b> {/* Total final del carrito */}
               {/* Suma del subtotal y el costo de envío */}
-              <b>${getTotalCartAmount() + 2}</b> {/* Se suma el subtotal con el precio fijo del envío */}
+              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b> {/* Se suma el subtotal con el precio fijo del envío */}
             </div>
           </div>
-          <button>PROCEED TO CHECKOUT</button> {/* Botón para proceder al pago */}
+          <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button> {/* Botón para proceder al pago */}
         </div>
         {/* Sección para ingresar un código promocional */}
         <div className="cart-promocode">
