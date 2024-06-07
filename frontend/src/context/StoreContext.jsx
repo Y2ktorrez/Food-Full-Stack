@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { food_list } from "../assets/assets";
 
 // Crea un contexto de React para compartir datos entre componentes
-export const StoreContext = createContext(null)
+export const StoreContext = createContext()
 
 // Define un componente funcional que actúa como proveedor de contexto
 const StoreContextProvider = (props) =>{
@@ -25,10 +25,21 @@ const StoreContextProvider = (props) =>{
         setCartItems((prev)=>({...prev, [itemId]:prev[itemId]-1}))
     }
 
-    // Efecto secundario que se ejecuta cuando cambian los elementos del carrito y registra los cambios en la consola
-    useEffect(()=>{
+    
+/*  useEffect(()=>{
         console.log(cartItems);
-    },[cartItems])
+    },[cartItems]) */
+
+    const getTotalCartAmount = () =>{
+        let totalAmount = 0;
+        for (const item in cartItems){
+            if(cartItems[item]>0){
+                let itemInfo = food_list.find((product)=> product._id===item);
+                totalAmount += itemInfo.price * cartItems[item];
+            }
+        }
+        return totalAmount;
+    }
 
     // Define el objeto de contexto que contiene los datos y funciones necesarios para la tienda
     const contextValue = {
@@ -36,7 +47,8 @@ const StoreContextProvider = (props) =>{
         cartItems, // Elementos del carrito
         setCartItems, // Función para establecer los elementos del carrito
         addToCart, // Función para agregar elementos al carrito
-        removeFromCart // Función para eliminar elementos del carrito
+        removeFromCart, // Función para eliminar elementos del carrito
+        getTotalCartAmount
     }
 
     // Devuelve el proveedor de contexto con el valor del contexto establecido y los componentes secundarios como hijos
@@ -46,6 +58,5 @@ const StoreContextProvider = (props) =>{
         </StoreContext.Provider>
     )
 }
-
 
 export default StoreContextProvider;

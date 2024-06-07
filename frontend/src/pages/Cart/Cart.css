@@ -1,0 +1,108 @@
+.cart{
+    margin-top: 100px; /* Define un margen superior de 100px para el contenedor principal del carrito */
+}
+
+.cart-items-title{
+    display: grid; /* Usa el diseño de cuadrícula para alinear los elementos del título */
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr; /* Define las columnas de la cuadrícula */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    color: grey; /* Color de texto gris */
+    font-size: max(1vw,12px); /* Tamaño de fuente máximo entre 1vw y 12px */
+}
+
+.cart-items-item{
+    margin: 10px 0px; /* Margen vertical de 10px */
+    color: black; /* Color de texto negro */
+}
+
+.cart-items-item img{
+    width: 50px; /* Ancho de las imágenes de los ítems del carrito */
+}
+
+.cart hr{
+    height: 1px; /* Altura de la línea horizontal */
+    background-color: #e2e2e2; /* Color de fondo de la línea */
+    border: none; /* Sin bordes */
+}
+
+.cart-items-item .cross{
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el elemento */
+    font-size: 20px; /* Tamaño de fuente del ícono de cierre */
+}
+
+.cart-bottom{
+    margin-top: 80px; /* Margen superior de 80px */
+    display: flex; /* Usa el diseño flex para alinear los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    gap: max(12vw,20px); /* Espacio entre los elementos, máximo entre 12vw y 20px */
+}
+
+.cart-total{
+    flex: 1; /* Toma todo el espacio disponible */
+    display: flex; /* Usa el diseño flex */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 20px; /* Espacio de 20px entre los elementos */
+}
+
+.cart-total-details{
+    display: flex; /* Usa el diseño flex */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    color: #555; /* Color de texto gris oscuro */
+}
+
+.cart-total hr{
+    margin: 10px 0px; /* Margen vertical de 10px */
+}
+
+.cart-total button{
+    border: none; /* Sin borde */
+    color: white; /* Color de texto blanco */
+    background-color: tomato; /* Color de fondo tomate */
+    width: max(15vw,200px); /* Ancho máximo entre 15vw y 200px */
+    padding: 12px 0px; /* Relleno vertical de 12px, sin relleno horizontal */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+.cart-promocode{
+    flex: 1; /* Toma todo el espacio disponible */
+}
+
+.cart-promocode p{
+    color: #555; /* Color de texto gris oscuro */
+}
+
+.cart-promocode-input{
+    margin-top: 10px; /* Margen superior de 10px */
+    display: flex; /* Usa el diseño flex */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    background-color: #eaeaea; /* Color de fondo gris claro */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+}
+
+.cart-promocode-input input{
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    padding-left: 10px; /* Relleno a la izquierda de 10px */
+}
+
+.cart-promocode-input button{
+    width: max(10vw,150px); /* Ancho máximo entre 10vw y 150px */
+    padding: 12px 5px; /* Relleno vertical de 12px, relleno horizontal de 5px */
+    background-color: black; /* Color de fondo negro */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto blanco */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+}
+
+/* Response */
+@media (max-width:750px){
+    .cart-bottom{
+        flex-direction: column-reverse; /* Cambia la dirección flex a columna inversa */
+    }
+    .cart-promocode{
+        justify-content: start; /* Alinea el contenido al inicio */
+    }
+}
