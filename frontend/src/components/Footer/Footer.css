@@ -1,0 +1,48 @@
+.footer{
+    color: #d9d9d9; /* Color del texto del pie de página */
+    background-color: #323232; /* Color de fondo del pie de página */
+    display: flex; /* Establece un contenedor flexible para alinear elementos */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en columna */
+    align-items: center; /* Alinea los elementos secundarios horizontalmente en el centro */
+    gap: 20px; /* Añade un espacio de 20 píxeles entre los elementos secundarios */
+    padding: 20px 8vw; /* Añade relleno de 20 píxeles arriba y abajo, y un relleno horizontal del 8% del ancho de la ventana gráfica */
+    padding-top: 80px; /* Añade un relleno superior adicional de 80 píxeles */
+    margin-top: 100px; /* Añade un margen superior de 100 píxeles */
+}
+
+.footer-content{
+    width: 100%; /* Establece el ancho del contenido del pie de página al 100% */
+    display: grid; /* Define un contenedor de cuadrícula para el contenido */
+    grid-template-columns: 2fr 1fr 1fr; /* Distribuye el contenido en tres columnas */
+    gap: 80px; /* Añade un espacio de 80 píxeles entre las columnas */
+}
+
+.footer-content-left , .footer-content-right , .footer-content-center{
+    display: flex; /* Establece un contenedor flexible para alinear elementos */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en columna */
+    align-items: start; /* Alinea los elementos secundarios horizontalmente al principio */
+    gap: 20px; /* Añade un espacio de 20 píxeles entre los elementos secundarios */
+}
+
+.footer-content-left li, .footer-content-right li, .footer-content-center li{
+    list-style: none; /* Elimina los estilos de viñeta de la lista */
+    margin-bottom: 10px; /* Añade un margen inferior de 10 píxeles a los elementos de la lista */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos de la lista, indicando que son clicable */
+}
+
+.footer-content-right h2, .footer-content-center h2{
+    color: white; /* Establece el color del texto del título en blanco */
+}
+
+.footer-social-icons img{
+    width: 40px; /* Establece el ancho de las imágenes de los íconos sociales */
+    margin-right: 15px; /* Añade un margen derecho de 15 píxeles a las imágenes de los íconos sociales */
+}
+
+.footer hr{
+    width: 100%; /* Establece el ancho de la línea horizontal al 100% */
+    height: 2px; /* Establece la altura de la línea horizontal en 2 píxeles */
+    margin: 20px 0; /* Añade un margen de 20 píxeles arriba y abajo de la línea horizontal */
+    background-color: grey; /* Establece el color de fondo de la línea horizontal */
+    border: none; /* Elimina cualquier borde de la línea horizontal */
+}

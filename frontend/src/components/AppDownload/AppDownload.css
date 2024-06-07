@@ -1,0 +1,25 @@
+.app-download{
+    margin: auto auto; /* Centra el componente horizontalmente */
+    margin-top: 100px; /* Agrega un margen superior de 100px */
+    font-size: max(3vw,20px); /* Establece el tamaño de fuente mínimo de 20px o el 3% del ancho de la ventana */
+    text-align: center; /* Centra el texto */
+    font-weight: 500; /* Establece el peso de la fuente a 500 */
+}
+
+.app-download-platforms{
+    display: flex; /* Define un contenedor flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: max(2vw, 10px); /* Añade un espacio entre los elementos con un mínimo de 10px */
+    margin-top: 40px; /* Agrega un margen superior de 40px */
+}
+
+.app-download-platforms img{
+    width: max(30vw, 120px); /* Establece el ancho mínimo de las imágenes como el 30% del ancho de la ventana o 120px */
+    max-width: 180px; /* Establece el ancho máximo de las imágenes como 180px */
+    transition: 0.5s; /* Aplica una transición suave de 0.5 segundos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+
+.app-download-platforms img:hover{
+    transform: scale(1.05); /* Escala las imágenes al 105% en el estado de desplazamiento */
+}

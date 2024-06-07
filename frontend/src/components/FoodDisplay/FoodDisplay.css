@@ -12,5 +12,5 @@
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Establece las columnas de la cuadrícula: se ajustará automáticamente al número de elementos y cada columna tendrá un ancho mínimo de 240 píxeles y máximo de 1 fracción del espacio disponible */
     margin-top: 30px; /* Agrega un margen superior de 30 píxeles al contenedor de food-display-list */
     gap: 30px; /* Agrega un espacio entre las filas y columnas de 30 píxeles */
-    row-gap: 50px; /* Agrega un espacio entre las filas de 50 píxeles */
+    justify-content: center;
 }
