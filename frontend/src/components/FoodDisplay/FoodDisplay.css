@@ -1,0 +1,16 @@
+.food-display {
+    margin-top: 30px; /* Agrega un margen superior de 30 píxeles al contenedor de food-display */
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px); /* Establece el tamaño de la fuente del título en el 2% del ancho de la ventana gráfica o un mínimo de 24 píxeles */
+    font-weight: 600; /* Establece el grosor de la fuente del título en 600 (negrita) */
+}
+
+.food-display-list {
+    display: grid; /* Define un contenedor de cuadrícula para los elementos de food-display-list */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Establece las columnas de la cuadrícula: se ajustará automáticamente al número de elementos y cada columna tendrá un ancho mínimo de 240 píxeles y máximo de 1 fracción del espacio disponible */
+    margin-top: 30px; /* Agrega un margen superior de 30 píxeles al contenedor de food-display-list */
+    gap: 30px; /* Agrega un espacio entre las filas y columnas de 30 píxeles */
+    row-gap: 50px; /* Agrega un espacio entre las filas de 50 píxeles */
+}

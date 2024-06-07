@@ -18,6 +18,7 @@ a{
   color: inherit;
 }
 
+/* Este es el margen de toda la pagina */
 .app{
   width: 80%; /* El ancho del elemento será el 80% del ancho del contenedor padre */
   margin: auto; /* Centrará el elemento horizontalmente dentro de su contenedor padre */

@@ -1,0 +1,74 @@
+.food-item {
+    width: 100%; /* Establece el ancho del elemento al 100% del contenedor padre */
+    margin: auto; /* Centra horizontalmente el elemento */
+    border-radius: 15px; /* Agrega bordes redondeados de 15 píxeles */
+    box-shadow: 0px 0px 10px #00000015; /* Agrega una sombra suave alrededor del elemento */
+    transition: 0.3s; /* Aplica una transición suave a las propiedades animadas en 0.3 segundos */
+    animation: fadeIn 1s; /* Agrega una animación de desvanecimiento durante 1 segundo */
+}
+
+.food-item-image {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    border-radius: 15px 15px 0px 0px; /* Agrega bordes redondeados solo en la parte superior de la imagen */
+}
+
+.food-item-info {
+    padding: 20px; /* Agrega relleno de 20 píxeles alrededor del contenido */
+}
+
+.food-item-name-rating {
+    display: flex; /* Define un contenedor flexible para el nombre y la clasificación */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos secundarios */
+    align-items: center; /* Alinea los elementos secundarios verticalmente en el centro */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles */
+}
+
+.food-item-name-rating p {
+    font-size: 20px; /* Establece el tamaño de la fuente del nombre en 20 píxeles */
+    font-weight: 500; /* Establece el grosor de la fuente del nombre en 500 (negrita) */
+}
+
+.food-item-name-rating img {
+    width: 70px; /* Establece el ancho de la imagen de la clasificación en 70 píxeles */
+}
+
+.food-item-desc {
+    color: #676767; /* Establece el color del texto de la descripción */
+    font-size: 12px; /* Establece el tamaño de la fuente de la descripción en 12 píxeles */
+}
+
+.food-item-price {
+    color: tomato; /* Establece el color del texto del precio */
+    font-size: 22px; /* Establece el tamaño de la fuente del precio en 22 píxeles */
+    font-weight: 500; /* Establece el grosor de la fuente del precio en 500 (negrita) */
+    margin: 10px 0px; /* Agrega un margen superior e inferior de 10 píxeles y cero a los lados */
+}
+
+.food-item-img-container {
+    position: relative; /* Establece la posición relativa para el contenedor de la imagen */
+}
+
+.food-item-img-container .add {
+    width: 35px; /* Establece el ancho del ícono de agregar en 35 píxeles */
+    position: absolute; /* Establece la posición absoluta para el ícono de agregar */
+    bottom: 15px; /* Establece la posición 15 píxeles desde la parte inferior */
+    right: 15px; /* Establece la posición 15 píxeles desde la derecha */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono de agregar, indicando que es clicable */
+    border-radius: 50%; /* Hace que el ícono de agregar tenga bordes redondeados */
+}
+
+.food-item-counter {
+    position: absolute; /* Establece la posición absoluta para el contador de elementos */
+    bottom: 15px; /* Establece la posición 15 píxeles desde la parte inferior */
+    right: 15px; /* Establece la posición 15 píxeles desde la derecha */
+    display: flex; /* Define un contenedor flexible para el contador */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    gap: 10px; /* Agrega un espacio entre los elementos secundarios de 10 píxeles */
+    padding: 6px; /* Agrega relleno alrededor del contador */
+    border-radius: 50px; /* Hace que el contador tenga bordes redondeados */
+    background-color: white; /* Establece el color de fondo del contador */
+}
+
+.food-item-counter img {
+    width: 30px; /* Establece el ancho de los íconos del contador en 30 píxeles */
+}
