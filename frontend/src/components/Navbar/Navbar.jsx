@@ -3,13 +3,13 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => { // Define el componente Navbar y recibe setShowLogin como prop
 
     const [menu, setMenu] = useState(""); /* Estado para controlar el menú activo */
 
     return (
         <div className='navbar'>     {/* Contenedor principal de la barra de navegación */}
-            <img src={assets.logo} alt="" className="logo" />  {/* Logo de la compañia */}
+            <img src={assets.logo} alt="" className="logo" />  {/* Logo de la compañía */}
             <ul className='navbar-menu'>  {/* Lista de navegación */}
                 <Link to='/' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>home</Link>  {/* Enlace a la página de inicio */}
                 <a href='#explore-menu' onClick={() => setMenu("menu")} className={menu === "menu" ? "active" : ""}>menu</a>  {/* Enlace a la sección del menú */}
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <img src={assets.basket_icon} alt="" /> {/* Icono del carrito */}
                     <div className="dot"></div>            {/* Indicador visual como un punto rojo */}
                 </div>
-                <button>sign in</button>  {/* Botón de inicio de sesión */}
+                <button onClick={() => setShowLogin(true)}>sign in</button>  {/* Botón de inicio de sesión que muestra el popup de login */}
             </div>
         </div>
     )
